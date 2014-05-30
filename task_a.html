@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<style>
+
+.point{
+    position:relative;
+    width:10px;
+    height:10px;
+    background:black;
+    border-radius:5px;
+}
+
+.circle{
+    width:200px;
+    height:200px;
+    position:absolute;
+    -webkit-animation:orbit 10s linear infinite;
+    -moz-animation:orbit 10s linear infinite;
+    top:200px;
+    left:100px;
+}
+
+@-webkit-keyframes orbit { 
+from { -webkit-transform:rotate(-35deg) } 
+to { -webkit-transform:rotate(325deg) } 
+}
+@-moz-keyframes orbit { 
+from { -moz-transform:rotate(-35deg) } 
+to { -moz-transform:rotate(325deg) } 
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="circle"><div class="point"></div></div>
+
+</body>
+
+</html>
